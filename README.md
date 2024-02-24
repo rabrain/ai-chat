@@ -2,7 +2,7 @@
   <img src="asset/logo.svg" height="120">
   <h1>Chat Bar</h1>
   <h3>ChatGPT in the menu Bar</h3>
-  <img src="asset/screenshot.png" width="100%" alt="Screenshot">
+  <img src="asset/screenshot.png" width="80%" alt="Screenshot">
 </div>
 
 **Chat Bar is a cross-platform desktop application that provides quick access to ChatGPT from the tray (menu bar).**
