@@ -1,0 +1,25 @@
+{
+  "name": "chat-bar-web",
+  "version": "1.0.0",
+  "description": "The static web site (landing page) of Chat Bar.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rabrain/chat-bar-docs.git"
+  },
+  "author": "lilac",
+  "license": "MIT",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/rabrain/chat-bar-docs/issues"
+  },
+  "homepage": "https://github.com/rabrain/chat-bar-docs#readme",
+  "devDependencies": {
+    "vite": "^5.1.4"
+  }
+}
