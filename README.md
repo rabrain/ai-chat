@@ -14,6 +14,8 @@
 
 **Chat Bar is a cross-platform desktop application that provides quick access to ChatGPT from the tray (menu bar).**
 
+By having it reside on the menu bar, we eliminate the need to switch between windows when using ChatGPT as our daily assistant. It also enables us to have a streamlined workflow, as we can easily multitask and communicate with the AI without interrupting our current tasks.
+
 ## Downloads
 
 The application supports the following operating systems. Visit the [release page](https://github.com/rabrain/chat-bar-docs/releases) to download the app.
