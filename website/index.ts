@@ -1,6 +1,4 @@
-const API_URL = "https://api.github.com/repos/samuelmeuli/mini-diary/releases/latest";
-const APP_STORE_URL = "https://itunes.apple.com/app/mini-diary/id1450296884";
-const SNAPCRAFT_URL = "https://snapcraft.io/mini-diary";
+const API_URL = "https://api.github.com/repos/rabrain/chat-bar-docs/releases/latest";
 
 interface Asset {
 	browser_download_url: string;
@@ -27,11 +25,6 @@ enum Platform {
 	Linux = "linux",
 }
 
-const FIXED_URLS: Partial<Record<Platform, string>> = {
-	[Platform.Mas]: APP_STORE_URL,
-	[Platform.Linux]: SNAPCRAFT_URL,
-};
-
 const PLATFORM_EXTENSIONS: Partial<Record<Platform, Extension>> = {
 	[Platform.Mac]: "dmg",
 	[Platform.Windows]: "exe",
@@ -40,7 +33,7 @@ const PLATFORM_EXTENSIONS: Partial<Record<Platform, Extension>> = {
 function getCurrentPlatform(): Platform {
 	const userAgent = navigator.userAgent.toLowerCase();
 	if (userAgent.match(/(mac|os x)/)) {
-		return Platform.Mas;
+		return Platform.Mac;
 	}
 	if (userAgent.match(/windows/)) {
 		return Platform.Windows;
@@ -74,7 +67,7 @@ async function insertDownloadUrls(): Promise<void> {
 	const platforms = Object.values(Platform) as Platform[];
 	platforms.forEach((platform): void => {
 		const extension = PLATFORM_EXTENSIONS[platform] as Extension;
-		const url = FIXED_URLS[platform] || assetMap[extension];
+		const url = assetMap[extension];
 
 		const links = Array.from(
 			document.getElementsByClassName(`download-${platform}`),
