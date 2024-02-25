@@ -18,7 +18,7 @@ export default function Home() {
           src="/bg.png"
           width={1920}
           height={1080}
-          alt="test"
+          alt="background"
           className="absolute -z-50 w-full min-h-screen md:max-h-[670px]  lg:min-h-screen -top-20 left-0 opacity-10"
         />
         {/* Home section */}
@@ -28,19 +28,17 @@ export default function Home() {
 
           <div className="flex flex-col text-center space-y-12">
             <div className="flex flex-col items-center space-y-6">
-              <p className="capitalize border border-slate-700 py-1 px-3 text-xs rounded-3xl cursor-pointer hover:border-sky-500 hover:bg-slate-800 shadow-md transition-all">
+              {/* <p className="capitalize border border-slate-700 py-1 px-3 text-xs rounded-3xl cursor-pointer hover:border-sky-500 hover:bg-slate-800 shadow-md transition-all">
                 New Features Is Now Available.
                 <ArrowRightCircle className="inline ml-1 w-4 h-4" />
-              </p>
-              <Heading title="A CRM dashboard for engineering teams" />
+              </p> */}
+              <Heading title="ChatGPT in the menu Bar" />
               <p className="max-w-[46rem] leading-normal sm:text-lg sm:leading-8">
-                Boost engineering team&rsquo;s productivity with Ocean CRM
-                dashboard that streamlines project management, collaboration,
-                and data-driven decision-making.
+                Chat Bar is a cross-platform desktop application that provides quick access to ChatGPT from the menu bar (tray).
               </p>
               <div className="flex items-center gap-4">
                 <Button>
-                  Get started
+                  Download
                   <MoveRight className="w-4 h-4" />
                 </Button>
                 <Link href="#pricing">
@@ -49,7 +47,7 @@ export default function Home() {
               </div>
             </div>
             <Image
-              src="Hero-image.svg"
+              src="/screenshot.png"
               width={670}
               height={370}
               alt="banner"

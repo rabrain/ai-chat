@@ -7,8 +7,8 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ocean",
-  description: "best modern crm dashboard for engineering teams",
+  title: "ChatBar",
+  description: "ChatGPT in the menu Bar",
 };
 
 export default function RootLayout({

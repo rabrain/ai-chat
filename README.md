@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="asset/logo.svg" height="120">
+  <img src="public/logo.svg" height="120">
   <h1>Chat Bar</h1>
   <h3>ChatGPT in the menu Bar</h3>
 
@@ -8,7 +8,7 @@
   [![Window x64](https://img.shields.io/badge/-Windows%20%E2%86%92-blue?style=flat-square&logo=windows&logoColor=white)](https://github.com/rabrain/chat-bar-docs/releases)
   [![Linux](https://img.shields.io/badge/-Linux%20%E2%86%92-yellow?style=flat-square&logo=linux&logoColor=white)](https://github.com/rabrain/chat-bar-docs/releases)
 
-  <img src="asset/screenshot.png" width="80%" alt="Screenshot">
+  <img src="public/screenshot.png" width="80%" alt="Screenshot">
 </div>
 
 <br />
