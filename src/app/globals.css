@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+section {
+  @apply py-12 md:py-16 lg:py-20;
+}
+.btn {
+  @apply flex justify-center items-center gap-2 capitalize text-white py-2 px-6 rounded-md transition-all shadow-lg whitespace-nowrap;
+}
+
+.btn-primary {
+  @apply bg-sky-600 hover:bg-sky-500;
+}
+
+.btn-secondary {
+  @apply bg-slate-800 hover:bg-slate-700;
+}
+
+.btn-outline {
+  @apply border border-slate-600 hover:bg-slate-800;
+}
+.bubble {
+  @apply absolute -z-10 rounded-full blur-3xl opacity-20;
+}
