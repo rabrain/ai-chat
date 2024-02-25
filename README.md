@@ -8,9 +8,10 @@
   [![Window x64](https://img.shields.io/badge/-Windows%20%E2%86%92-blue?style=flat-square&logo=windows&logoColor=white)](https://github.com/rabrain/chat-bar-docs/releases)
   [![Linux](https://img.shields.io/badge/-Linux%20%E2%86%92-yellow?style=flat-square&logo=linux&logoColor=white)](https://github.com/rabrain/chat-bar-docs/releases)
 
-  <br />
   <img src="asset/screenshot.png" width="80%" alt="Screenshot">
 </div>
+
+<br />
 
 **Chat Bar is a cross-platform desktop application that provides quick access to ChatGPT from the tray (menu bar).**
 
