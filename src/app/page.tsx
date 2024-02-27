@@ -1,4 +1,4 @@
-import { ArrowRightCircle, MoveRight } from "lucide-react";
+import { MoveRight } from "lucide-react";
 import Heading from "@/components/Heading";
 import Button from "@/components/Button";
 import Link from "next/link";
@@ -10,6 +10,11 @@ import FeatureBlock from "@/components/FeatureBlock";
 import Pricing from "@/components/Pricing";
 import { testimonial } from "@/constants/testimonial";
 import TestimonialCart from "@/components/TestimonialCart";
+import Windows from "@/components/icons/Windows";
+import Linux from "@/components/icons/Linux";
+import Apple from "super-tiny-icons/images/svg/apple.svg";
+import IconLink from "@/components/IconLink";
+
 export default function Home() {
   return (
     <main className=" pt-24 lg:pt-28 antialiased">
@@ -37,12 +42,14 @@ export default function Home() {
                 Chat Bar is a cross-platform desktop application that provides quick access to ChatGPT from the menu bar (tray).
               </p>
               <div className="flex items-center gap-4">
-                <Button>
-                  Download
-                  <MoveRight className="w-4 h-4" />
-                </Button>
-                <Link href="#pricing">
-                  <Button variants="outline">View pricing</Button>
+                <Link href="https://github.com/rabrain/chat-bar-docs/releases" className="btn btn-outline">
+                  <Windows className="w-6 h-6"/>
+                  <span>Windows</span>
+                </Link>
+                <IconLink icon={Apple} text="Mac OS" href="https://github.com/rabrain/chat-bar-docs/releases" />
+                <Link href="https://github.com/rabrain/chat-bar-docs/releases" className="btn btn-outline">
+                  <Linux className="w-6 h-6"/>
+                  <span>Windows</span>
                 </Link>
               </div>
             </div>
