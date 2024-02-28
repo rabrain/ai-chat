@@ -1,7 +1,7 @@
 import React from "react";
 import { SVGComponent } from "./types";
 
-export default ({ ...props }: SVGComponent) => {
+export default function Linux({ ...props }: SVGComponent) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

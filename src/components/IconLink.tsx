@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export type IconProps = {
   src: string,
@@ -15,7 +16,7 @@ export type Props = {
 export default function IconLink(props: Props) {
   return (
     <Link href={props.href} className="btn btn-outline">
-      <img src={props.icon.src} className="w-6 h-6"/>
+      <Image src={props.icon.src} className="w-6 h-6" alt={props.text} />
       <span>{props.text}</span>
     </Link>
   )

@@ -10,8 +10,8 @@ const Footer = () => {
     // <Facebook key="f" className="social-link" />,
     // <Instagram key="i" className="social-link" />,
     <Twitter key="t" className="social-link" />,
-    <Link href="https://github.com/rabrain/chat-bar-docs" target="_blank">
-      <Github key="g" className="social-link" />
+    <Link key="g" href="https://github.com/rabrain/chat-bar-docs" target="_blank">
+      <Github className="social-link" />
     </Link>,
     // <Youtube key="y" className="social-link" />,
   ];
