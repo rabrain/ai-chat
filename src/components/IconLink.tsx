@@ -16,7 +16,7 @@ export type Props = {
 export default function IconLink(props: Props) {
   return (
     <Link href={props.href} className="btn btn-outline">
-      <Image src={props.icon.src} className="w-6 h-6" alt={props.text} />
+      <Image src={props.icon.src} height={props.icon.height} width={props.icon.width} className="w-6 h-6" alt={props.text} />
       <span>{props.text}</span>
     </Link>
   )
