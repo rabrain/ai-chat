@@ -10,8 +10,8 @@ const FeatureCard: FC<FeatureCardProps> = ({ title, imageUrl, content }) => {
       <article className="flex flex-col items-center md:items-start lg:flex-row lg:items-center gap-6">
         <Image src={imageUrl} width={50} height={50} alt={title} />
         <div className="flex flex-col text-center md:text-start space-y-1">
-          <h4 className="text-slate-100 font-bold text-base">{title}</h4>
-          <p className="text-sm leading-6">{content}</p>
+          <h4 className="text-slate-100 font-bold text-lg">{title}</h4>
+          <p className="text-base leading-6">{content}</p>
         </div>
       </article>
     </article>

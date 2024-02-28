@@ -2,25 +2,27 @@ import React, { ReactNode } from "react";
 import Logo from "@/components/Logo";
 import { Facebook, Github, Instagram, Twitter, Youtube } from "lucide-react";
 import { footerColumns } from "@/constants/footer-links";
+import Link from "next/link";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const socialLinks: ReactNode[] = [
-    <Facebook key="f" className="social-link" />,
-    <Instagram key="i" className="social-link" />,
+    // <Facebook key="f" className="social-link" />,
+    // <Instagram key="i" className="social-link" />,
     <Twitter key="t" className="social-link" />,
-    <Github key="g" className="social-link" />,
-    <Youtube key="y" className="social-link" />,
+    <Link href="https://github.com/rabrain/chat-bar-docs" target="_blank">
+      <Github key="g" className="social-link" />
+    </Link>,
+    // <Youtube key="y" className="social-link" />,
   ];
   return (
     <footer className="pt-20 pb-4">
       {/* Links */}
-      <div className="container mb-12 flex flex-col lg:flex-row">
-        <div className="basis-1/3 flex flex-col md:items-center lg:items-start gap-4 lg:gap-6">
+      <div className="container lg:w-4/5 mb-12 flex flex-col lg:flex-row">
+        <div className="basis-1/2 flex flex-col md:items-center lg:items-start gap-4 lg:gap-6">
           <Logo />
           <p className="text-lg">
-            Making the world a better place through constructing elegant
-            hierarchies.
+            Making generative artificial intelligence accessible to all.
           </p>
           <ul className="flex items-center gap-4 lg:gap-6 mb-6 lg:mb-0">
             {socialLinks.map((link, index) => (
@@ -30,7 +32,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <div className="basis-2/3 grid grid-cols-2 lg:grid-cols-4 pt-8 lg:pt-0 lg:ps-8">
+        <div className="basis-1/2 grid grid-cols-2 pt-8 lg:pt-0 lg:ps-8">
           {footerColumns.map((col, index) => (
             <article
               key={index}
@@ -56,8 +58,8 @@ const Footer = () => {
       {/* Links */}
       {/* Copyrights */}
       <div className="container border-t border-slate-700">
-        <p className="capitalize pt-4 text-center lg:text-start">
-          {`© ${currentYear} ocean, inc. all rights reserved.`}
+        <p className="capitalize pt-4 text-center">
+          {`© ${currentYear} ChatBar all rights reserved.`}
         </p>
       </div>
       {/* Copyrights */}

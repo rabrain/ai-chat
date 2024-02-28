@@ -1,6 +1,6 @@
-import { Clinet } from "./../types/interfaces";
-export const Clinets: Clinet[] = [
-  {
+import { Client } from "../types/interfaces";
+export const Clients: Client[] = [
+  /* {
     imageUrl: "/companies/company-1.svg",
     alt: "compane1",
   },
@@ -19,5 +19,5 @@ export const Clinets: Clinet[] = [
   {
     imageUrl: "/companies/company-5.svg",
     alt: "compane5",
-  },
+  }, */
 ];
