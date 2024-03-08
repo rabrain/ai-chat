@@ -11,10 +11,12 @@ import Windows from "@/components/icons/Windows";
 import Linux from "@/components/icons/Linux";
 import Apple from "super-tiny-icons/images/svg/apple.svg";
 import IconLink from "@/components/IconLink";
+import Analytics from "@/components/Analytics";
 
 export default function Home() {
   return (
     <main className="pt-24 lg:pt-28 antialiased">
+      <Analytics name="page.home" />
       <div className="relative container lg:w-4/5">
         {/* <Image
           src="/bg.png"
