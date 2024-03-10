@@ -13,6 +13,7 @@ import Apple from "super-tiny-icons/images/svg/apple.svg";
 import IconLink from "@/components/IconLink";
 
 export default function Home() {
+  const downloadUrl = "https://github.com/rabrain/chat-bar-docs/releases"
   return (
     <main className="pt-24 lg:pt-28 antialiased">
       <div className="relative container lg:w-4/5">
@@ -36,15 +37,15 @@ export default function Home() {
               </p> */}
               <Heading title="ChatGPT in the menu Bar" />
               <p className="max-w-[46rem] leading-normal md:text-xl sm:text-lg sm:leading-8">
-                ChatBar is a cross-platform desktop application that provides quick access to ChatGPT from the menu bar (tray).
+                AI Chat Bar is a cross-platform ChatGPT desktop application that provides quick access to OpenAI ChatGPT from the menu bar (tray).
               </p>
               <div className="flex items-center gap-4">
-                <Link href="https://github.com/rabrain/chat-bar-docs/releases" className="btn btn-outline">
+                <Link href={downloadUrl} className="btn btn-outline">
                   <Windows className="w-6 h-6" />
                   <span>Windows</span>
                 </Link>
-                <IconLink icon={Apple} text="Mac OS" href="https://github.com/rabrain/chat-bar-docs/releases" />
-                <Link href="https://github.com/rabrain/chat-bar-docs/releases" className="btn btn-outline">
+                <IconLink icon={Apple} text="Mac OS" href={downloadUrl} />
+                <Link href={downloadUrl} className="btn btn-outline">
                   <Linux className="w-6 h-6" />
                   <span>Linux</span>
                 </Link>
@@ -95,9 +96,11 @@ export default function Home() {
             <div className="flex flex-col gap-4 items-center text-center lg:items-start lg:text-start">
               <Heading title="Features" />
               <p className="lg:max-w-[34rem] leading-normal sm:text-lg sm:leading-8">
-                ChatBar eliminates the need to switch between windows when using ChatGPT as our daily assistant.
+                Chat Bar eliminates the need to switch between windows when using ChatGPT as our daily assistant.
               </p>
-              <Button>Get Started</Button>
+              <Link href={downloadUrl}>
+                <Button>Get Started</Button>
+              </Link>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-1 gap-4 ">
               {feature.map((feature, index) => (
@@ -136,15 +139,15 @@ export default function Home() {
             <div className="flex flex-col gap-4 text-center lg:text-start">
               <Heading title="Chat with GPT in the Menu Bar" />
               <p className="max-w-[35rem] leading-normal text-lg">
-                Experience the power of ChatBar for seamless chat on the desktop.
+                Experience the power of Chat Bar for seamless AI chat on the desktop.
                 Boost productivity and streamline workflows.
                 Get started today!
               </p>
             </div>
-            <Button>
+            <Link href={downloadUrl} className="btn btn-primary">
               Download
               <MoveRight className="w-4 h-4" />
-            </Button>
+            </Link>
           </div>
         </section>
         {/* Contact section */}
