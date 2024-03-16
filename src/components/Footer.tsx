@@ -58,8 +58,8 @@ const Footer = () => {
       {/* Links */}
       {/* Copyrights */}
       <div className="container border-t border-slate-700">
-        <p className="capitalize pt-4 text-center">
-          {`© ${currentYear} ChatBar all rights reserved.`}
+        <p className="capitalize pt-4 text-sm">
+          {`© ${currentYear} AI Chat all rights reserved.`}
         </p>
       </div>
       {/* Copyrights */}

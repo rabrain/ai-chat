@@ -37,7 +37,7 @@ export default function Home() {
               </p> */}
               <Heading title="ChatGPT in the menu Bar" />
               <p className="max-w-[46rem] leading-normal md:text-xl sm:text-lg sm:leading-8">
-                AI Chat Bar is a cross-platform ChatGPT desktop application that provides quick access to OpenAI ChatGPT from the menu bar (tray).
+                AI Chat is a cross-platform ChatGPT desktop application that provides quick access to OpenAI ChatGPT from the menu bar (tray).
               </p>
               <div className="flex items-center gap-4">
                 <Link href={downloadUrl} className="btn btn-outline">
@@ -96,7 +96,7 @@ export default function Home() {
             <div className="flex flex-col gap-4 items-center text-center lg:items-start lg:text-start">
               <Heading title="Features" />
               <p className="lg:max-w-[34rem] leading-normal sm:text-lg sm:leading-8">
-                Chat Bar eliminates the need to switch between windows when using ChatGPT as our daily assistant.
+                AI Chat eliminates the need to switch between windows when using ChatGPT as our daily assistant.
               </p>
               <Link href={downloadUrl}>
                 <Button>Get Started</Button>
@@ -139,7 +139,7 @@ export default function Home() {
             <div className="flex flex-col gap-4 text-center lg:text-start">
               <Heading title="Chat with GPT in the Menu Bar" />
               <p className="max-w-[35rem] leading-normal text-lg">
-                Experience the power of Chat Bar for seamless AI chat on the desktop.
+                Experience the power of AI Chat for seamless ChatGPT integration on the desktop.
                 Boost productivity and streamline workflows.
                 Get started today!
               </p>

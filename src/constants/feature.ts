@@ -4,7 +4,7 @@ export const feature: Feature[] = [
     imageUrl: "/features/universal-access.svg",
     title: "Accessible",
     content:
-      "Chat bar on the top without window switch.",
+      "AI Chat on the top without window switch.",
   },
   {
     imageUrl: "/features/secure.svg",
