@@ -1,6 +1,6 @@
 <div align="center">
   <img src="public/logo.svg" height="120">
-  <h1>Chat Bar</h1>
+  <h1>AI Chat</h1>
   <h3>ChatGPT in the menu Bar</h3>
 
   [![MacOS M1/M2 Chip](https://img.shields.io/badge/-MacOS_M_Chip%20%E2%86%92-black?style=flat-square&logo=apple&logoColor=white)](https://github.com/rabrain/chat-bar-docs/releases)
@@ -13,7 +13,7 @@
 
 <br />
 
-**Chat Bar is a cross-platform desktop application that provides quick access to ChatGPT from the tray (menu bar).**
+**AI Chat is a cross-platform desktop application that provides quick access to ChatGPT from the tray (menu bar).**
 
 By having it reside on the menu bar, we eliminate the need to switch between windows when using ChatGPT as our daily assistant. It also enables us to have a streamlined workflow, as we can easily multitask and communicate with the AI without interrupting our current tasks.
 

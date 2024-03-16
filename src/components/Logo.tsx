@@ -8,7 +8,7 @@ const Logo = () => {
       <Image src="/logo.svg" width={32} height={32} alt="Logo" />
       <div className="relative">
         <h1 className="capitalize text-white text-xl font-bold tracking-wide">
-          ChatBar
+          AI Chat
         </h1>
       </div>
     </Link>
