@@ -26,14 +26,15 @@ const MobileNav = () => {
         } w-auto bg-slate-800 p-2 transition-all z-50`}
       >
         <nav className="w-full h-full flex flex-col space-y-2 capitalize font-normal tracking-wide">
-          {navLinks.map((link, index) => (
+          {Object.entries(navLinks).map(([key, link]) => (
             <Link
-              key={index}
-              href={`#${link}`}
+              key={key}
+              href={link}
               className=" py-1 px-2 transition-all rounded-md hover:bg-slate-700 hover:text-sky-400"
               onClick={toggleMenu}
+              target={link.startsWith("http") ? "_blank" : undefined}
             >
-              {link}
+              {key}
             </Link>
           ))}
         </nav>

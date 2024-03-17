@@ -11,13 +11,14 @@ const Navbar = () => {
         <Logo />
         {/* desktop navigation */}
         <nav className="hidden md:flex gap-8 capitalize">
-          {navLinks.map((link, index) => (
+          {Object.entries(navLinks).map(([key, link]) => (
             <Link
-              key={index}
-              href={`#${link}`}
+              key={key}
+              href={link}
               className="text-base font-semibold tracking-wide text-slate-200"
+              target={link.startsWith("http") ? "_blank" : undefined}
             >
-              {link}
+              {key}
             </Link>
           ))}
         </nav>
