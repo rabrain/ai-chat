@@ -11,11 +11,11 @@ import { JSX, SVGProps } from "react"
 
 export default function SearchPage() {
   return (
-    <div className="bg-white text-gray-900 p-8" data-mode="light">
+    <div className="dark:text-white text-gray-900 p-8">
       <header className="flex justify-between items-center">
         <div className="flex space-x-4 items-center w-2/3">
           <img alt="Search Engine Logo" className="h-10" src="/placeholder.svg" />
-          <Input className="bg-gray-100 text-gray-900" placeholder="tailwind add dark mode?" type="text" />
+          <Input className="dark:bg-gray-100 text-gray-900" placeholder="tailwind add dark mode?" type="text" />
           <Button className="btn-primary">Search</Button>
         </div>
         <div className="flex space-x-4 items-center">
@@ -38,13 +38,13 @@ export default function SearchPage() {
       <div className="flex mt-6">
         <div className="flex-grow">
           <div>
-            <Card className="bg-gray-100">
+            <Card>
               <CardHeader>
                 <CardTitle>Tailwind CSS</CardTitle>
                 <CardDescription>Lorem ipsum</CardDescription>
               </CardHeader>
             </Card>
-            <Card className="bg-gray-100 mt-4">
+            <Card className="mt-4">
               <CardHeader>
                 <CardTitle>Dark Mode</CardTitle>
                 <CardDescription>
@@ -52,7 +52,7 @@ export default function SearchPage() {
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card className="bg-gray-100 mt-4">
+            <Card className="mt-4">
               <CardHeader>
                 <CardTitle>Tailwind CSS Dark Mode</CardTitle>
                 <CardDescription>

@@ -10,20 +10,22 @@ import SearchPage from "./SearchPage"
  */
 export default function Banner() {
   return (
-    <div className="bg-[#0f0f0f] min-h-screen flex items-center justify-center text-white p-8">
-      <div className="w-1/3 text-center">
-        <div className="flex items-center justify-center mb-8">
-          <img alt="logo" src="/logo.svg" className="h-10" />
-          <h1 className="text-4xl font-bold mx-3">Search with ChatGPT</h1>
+    <div className="dark:bg-[#0f0f0f] dark:text-white min-h-screen flex items-center justify-center p-8">
+      <div className="w-1/3 text-center py-4">
+        <div className="flex justify-center">
+          <img alt="logo" src="/logo.svg" className="h-24" />
         </div>
-        <h2 className="text-xl mb-4">Get Direct Answers on Search</h2>
-        <div className="flex justify-center space-x-4 mb-12">
-          <TriangleIcon className="text-white h-8 w-6" />
-          <CloudIcon className="text-white h-8 w-8" />
+        <div className="flex items-center justify-center my-4">
+          <h1 className="text-4xl text-sky-600 font-bold mx-3">AI Search with ChatGPT</h1>
+        </div>
+        <h2 className="text-2xl mb-4">Get Direct Answers on Search</h2>
+        <div className="flex justify-center space-x-4">
+          {/* <TriangleIcon className="h-8 w-6" /> */}
+          <CloudIcon className="dark:text-white h-8 w-8" />
           <WindIcon className="text-sky-400 h-8 w-8" />
         </div>
       </div>
-      <div className="bg-gray-800 bg-opacity-50 rounded-lg m-6 p-6 w-2/3">
+      <div className="dark:bg-gray-800 bg-gray-100 bg-opacity-50 rounded-lg m-6 p-6 w-2/3">
         <div className="flex justify-between mb-4">
           <div className="flex space-x-1">
             <div className="bg-red-500 rounded-full h-3 w-3" />
