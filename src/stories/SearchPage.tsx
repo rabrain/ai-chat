@@ -1,6 +1,6 @@
 /**
  * v0 by Vercel.
- * @see https://v0.dev/t/Jt2wK2nFnwt
+ * @see https://v0.dev/t/x1ZA2g4bO7s
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
 import { Button } from "@/components/ui/button"
@@ -11,7 +11,7 @@ import { JSX, SVGProps } from "react"
 
 export default function SearchPage() {
   return (
-    <div className="bg-gray-900 p-8" data-mode="dark">
+    <div className="bg-white text-gray-900 p-8" data-mode="light">
       <header className="flex justify-between items-center">
         <div className="flex space-x-4 items-center">
           <img alt="Search Engine Logo" className="h-10" src="/placeholder.svg" />
@@ -32,8 +32,8 @@ export default function SearchPage() {
         </div>
       </header>
       <div className="flex mt-6">
-        <div className="shrink">
-          <Input className="w-full bg-gray-800 text-gray-300" placeholder="tailwind add dark mode?" type="text" />
+        <div className="flex-grow">
+          <Input className="w-full bg-gray-100 text-gray-900" placeholder="tailwind add dark mode?" type="text" />
           <div className="flex justify-between items-center mt-4">
             <div className="flex space-x-2">
               <Button variant="ghost">Javascript</Button>
@@ -44,13 +44,13 @@ export default function SearchPage() {
             <Button className="bg-pink-600">Generate</Button>
           </div>
           <div className="mt-6">
-            <Card className="bg-gray-800">
+            <Card className="bg-gray-100">
               <CardHeader>
                 <CardTitle>Dark Mode</CardTitle>
                 <CardDescription>Lorem ipsum</CardDescription>
               </CardHeader>
             </Card>
-            <Card className="bg-gray-800 mt-4">
+            <Card className="bg-gray-100 mt-4">
               <CardHeader>
                 <CardTitle>Dark Mode</CardTitle>
                 <CardDescription>
@@ -58,7 +58,7 @@ export default function SearchPage() {
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card className="bg-gray-800 mt-4">
+            <Card className="bg-gray-100 mt-4">
               <CardHeader>
                 <CardTitle>Tailwind CSS Dark Mode</CardTitle>
                 <CardDescription>
@@ -68,8 +68,8 @@ export default function SearchPage() {
             </Card>
           </div>
         </div>
-        <aside className="w-192 ml-8">
-          <Card className="bg-gray-800">
+        <aside className="w-96 ml-8">
+          <Card className="bg-gray-100">
             <CardHeader>
               <CardTitle>AI Chat <span className="text-sm">powered by ChatGPT</span></CardTitle>
             </CardHeader>

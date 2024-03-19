@@ -23,7 +23,7 @@ export default function Banner() {
           <WindIcon className="text-sky-400 h-8 w-8" />
         </div>
       </div>
-      <div className="bg-black bg-opacity-50 rounded-lg m-6 p-6 w-2/3">
+      <div className="bg-gray-800 bg-opacity-50 rounded-lg m-6 p-6 w-2/3">
         <div className="flex justify-between mb-4">
           <div className="flex space-x-1">
             <div className="bg-red-500 rounded-full h-3 w-3" />
