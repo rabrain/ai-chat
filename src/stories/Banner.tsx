@@ -21,7 +21,7 @@ export default function Banner() {
         <h2 className="text-2xl mb-4">Get Direct Answers on Search</h2>
         <div className="flex justify-center space-x-4">
           {/* <TriangleIcon className="h-8 w-6" /> */}
-          <CloudIcon className="dark:text-white h-8 w-8" />
+          <CloudIcon className="h-8 w-8" />
           <WindIcon className="text-sky-400 h-8 w-8" />
         </div>
       </div>
@@ -32,7 +32,7 @@ export default function Banner() {
             <div className="bg-yellow-500 rounded-full h-3 w-3" />
             <div className="bg-green-500 rounded-full h-3 w-3" />
           </div>
-          <ChevronDownIcon className="text-white h-5 w-5" />
+          <ChevronDownIcon className="h-5 w-5" />
         </div>
         <SearchPage />
       </div>
