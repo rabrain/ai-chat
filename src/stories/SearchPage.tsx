@@ -13,16 +13,10 @@ export default function SearchPage() {
   return (
     <div className="bg-white text-gray-900 p-8" data-mode="light">
       <header className="flex justify-between items-center">
-        <div className="flex space-x-4 items-center">
+        <div className="flex space-x-4 items-center w-2/3">
           <img alt="Search Engine Logo" className="h-10" src="/placeholder.svg" />
-          <div className="flex space-x-2">
-            <Button variant="ghost">All</Button>
-            <Button variant="ghost">Videos</Button>
-            <Button variant="ghost">Images</Button>
-            <Button variant="ghost">Shopping</Button>
-            <Button variant="ghost">News</Button>
-            <Button variant="ghost">More</Button>
-          </div>
+          <Input className="bg-gray-100 text-gray-900" placeholder="tailwind add dark mode?" type="text" />
+          <Button className="btn-primary">Search</Button>
         </div>
         <div className="flex space-x-4 items-center">
           <SettingsIcon className="text-gray-400" />
@@ -31,22 +25,22 @@ export default function SearchPage() {
           </Avatar>
         </div>
       </header>
+      <div className="flex justify-between items-center mt-4">
+        <div className="flex space-x-2">
+          <Button variant="ghost">All</Button>
+          <Button variant="ghost">Videos</Button>
+          <Button variant="ghost">Images</Button>
+          <Button variant="ghost">Shopping</Button>
+          <Button variant="ghost">News</Button>
+          <Button variant="ghost">More</Button>
+        </div>
+      </div>
       <div className="flex mt-6">
         <div className="flex-grow">
-          <Input className="w-full bg-gray-100 text-gray-900" placeholder="tailwind add dark mode?" type="text" />
-          <div className="flex justify-between items-center mt-4">
-            <div className="flex space-x-2">
-              <Button variant="ghost">Javascript</Button>
-              <Button variant="ghost">Not working</Button>
-              <Button variant="ghost">Css</Button>
-              <Button variant="ghost">Nextjs</Button>
-            </div>
-            <Button className="bg-pink-600">Generate</Button>
-          </div>
-          <div className="mt-6">
+          <div>
             <Card className="bg-gray-100">
               <CardHeader>
-                <CardTitle>Dark Mode</CardTitle>
+                <CardTitle>Tailwind CSS</CardTitle>
                 <CardDescription>Lorem ipsum</CardDescription>
               </CardHeader>
             </Card>
@@ -71,7 +65,7 @@ export default function SearchPage() {
         <aside className="w-96 ml-8">
           <Card className="bg-gray-100">
             <CardHeader>
-              <CardTitle>AI Chat <span className="text-sm">powered by ChatGPT</span></CardTitle>
+              <CardTitle><span className="text-pink-600">AI Chat </span><span className="text-sm">powered by ChatGPT</span></CardTitle>
             </CardHeader>
             <CardContent>
               <p>

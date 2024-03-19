@@ -14,9 +14,9 @@ export default function Banner() {
       <div className="w-1/3 text-center">
         <div className="flex items-center justify-center mb-8">
           <img alt="logo" src="/logo.svg" className="h-10" />
-          <h1 className="text-4xl font-bold mx-3">AI Chat</h1>
+          <h1 className="text-4xl font-bold mx-3">Search with ChatGPT</h1>
         </div>
-        <h2 className="text-xl mb-4">Get Answers from ChatGPT on Search</h2>
+        <h2 className="text-xl mb-4">Get Direct Answers on Search</h2>
         <div className="flex justify-center space-x-4 mb-12">
           <TriangleIcon className="text-white h-8 w-6" />
           <CloudIcon className="text-white h-8 w-8" />
@@ -79,48 +79,6 @@ function CloudIcon(props: IconProps) {
   )
 }
 
-
-function ComponentIcon(props: IconProps) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M5.5 8.5 9 12l-3.5 3.5L2 12l3.5-3.5Z" />
-      <path d="m12 2 3.5 3.5L12 9 8.5 5.5 12 2Z" />
-      <path d="M18.5 8.5 22 12l-3.5 3.5L15 12l3.5-3.5Z" />
-      <path d="m12 15 3.5 3.5L12 22l-3.5-3.5L12 15Z" />
-    </svg>
-  )
-}
-
-
-function DotIcon(props: IconProps) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <circle cx="12.1" cy="12.1" r="1" />
-    </svg>
-  )
-}
 
 function TriangleIcon(props: IconProps) {
   return (
