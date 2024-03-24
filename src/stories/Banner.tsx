@@ -13,7 +13,7 @@ export default function Banner() {
     <div className="dark:bg-[#0f0f0f] dark:text-white min-h-screen flex items-center justify-center p-8">
       <div className="w-1/3 text-center py-4">
         <div className="flex justify-center">
-          <img alt="logo" src="/logo.svg" className="h-24" />
+          <Image alt="logo" src="/logo.svg" className="h-24" />
         </div>
         <div className="flex items-center justify-center my-4">
           <h1 className="text-4xl text-sky-600 font-bold mx-3">AI Search with ChatGPT</h1>

@@ -8,13 +8,14 @@ import { AvatarImage, Avatar } from "@/components/ui/avatar"
 import { Input } from "@/components/ui/input"
 import { CardTitle, CardDescription, CardHeader, Card, CardContent } from "@/components/ui/card"
 import { JSX, SVGProps } from "react"
+import Image from "next/image"
 
 export default function SearchPage() {
   return (
     <div className="dark:text-white text-gray-900 p-8">
       <header className="flex justify-between items-center">
         <div className="flex space-x-4 items-center w-2/3">
-          <img alt="Search Engine Logo" className="h-10" src="/placeholder.svg" />
+          <Image alt="Search Engine Logo" className="h-10" src="/placeholder.svg" />
           <Input className="dark:bg-gray-100 text-gray-900" placeholder="tailwind add dark mode?" type="text" />
           <Button className="btn-primary">Search</Button>
         </div>
