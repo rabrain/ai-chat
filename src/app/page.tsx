@@ -35,9 +35,9 @@ export default function Home() {
                 New Features Is Now Available.
                 <ArrowRightCircle className="inline ml-1 w-4 h-4" />
               </p> */}
-              <Heading title="ChatGPT in the menu Bar" />
+              <Heading title="AI Chatbots in the Menu Bar" />
               <p className="max-w-[46rem] leading-normal md:text-xl sm:text-lg sm:leading-8">
-                AI Chat is a cross-platform ChatGPT desktop application that provides quick access to OpenAI ChatGPT from the menu bar (tray).
+                AI Chat is a cross-platform ChatGPT desktop application that provides quick access to chatbots like OpenAI ChatGPT from the menu bar (tray).
               </p>
               <div className="flex items-center gap-4">
                 <Link href={downloadUrl} className="btn btn-outline">
@@ -52,9 +52,9 @@ export default function Home() {
               </div>
             </div>
             <Image
-              src="/screenshot.png"
-              width={670}
-              height={370}
+              src="/screenshot-full.jpg"
+              width={960}
+              height={580}
               alt="banner"
               className="mx-auto shadow-xl"
             />
@@ -64,16 +64,16 @@ export default function Home() {
         {/* Clients section */}
         {Clients.length > 0 && (<section
           id="clients"
-          className="max-w-[62rem] mx-auto grid grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-x-12 gap-y-4"
+          className="max-w-[62rem] mx-auto grid grid-cols-6 gap-x-12 gap-y-4"
         >
-          {Clients.map((clinet, index) => (
+          {Clients.map((client, index) => (
             <Image
               key={index}
-              src={clinet.imageUrl}
+              src={client.imageUrl}
               width={120}
               height={80}
-              alt={clinet.alt}
-              className="w-40 md:w-full mx-auto"
+              alt={client.alt}
+              className="w-20 mx-auto"
             />
           ))}
         </section>
