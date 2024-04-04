@@ -7,10 +7,16 @@ export const feature: Feature[] = [
       "AI Chat on the top without window switch.",
   },
   {
+    imageUrl: "/features/open.svg",
+    title: "All Chatbots in One Place",
+    content:
+      "Quick access to chatbots of your choice, including ChatGPT, Claude, Gemini, Copilot, Perplexity etc.",
+  },
+  {
     imageUrl: "/features/secure.svg",
     title: "100% secured",
     content:
-      "ChatGPT is open in a secured webview. We never have access to your private data.",
+      "Chatbots are open in a secured webview. We never have access to your private data.",
   },
 ];
 export const featuresBlock: featureBlock[] = [
