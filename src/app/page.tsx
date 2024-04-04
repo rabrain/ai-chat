@@ -13,7 +13,7 @@ import Apple from "super-tiny-icons/images/svg/apple.svg";
 import IconLink from "@/components/IconLink";
 
 export default function Home() {
-  const downloadUrl = "https://github.com/rabrain/chat-bar-docs/releases"
+  const downloadUrl = "https://github.com/rabrain/ai-chat/releases/latest"
   return (
     <main className="pt-24 lg:pt-28 antialiased">
       <div className="relative container lg:w-4/5">
