@@ -4,19 +4,19 @@ export const feature: Feature[] = [
     imageUrl: "/features/universal-access.svg",
     title: "Accessible",
     content:
-      "AI Chat on the top without window switch.",
+      "Free ChatGPT app on the top without window switch.",
   },
   {
     imageUrl: "/features/open.svg",
-    title: "All Chatbots in One Place",
+    title: "Open AI Chat bots in One Place",
     content:
-      "Quick access to chatbots of your choice, including ChatGPT, Claude, Gemini, Copilot, Perplexity etc.",
+      "Quick access to AI chatbots of your choice, including ChatGPT, Claude, Gemini, Copilot, Perplexity etc.",
   },
   {
     imageUrl: "/features/secure.svg",
     title: "100% secured",
     content:
-      "Chatbots are open in a secured webview. We never have access to your private data.",
+      "AI Chat bots are open in a secured webview. We never have access to your private data.",
   },
 ];
 export const featuresBlock: featureBlock[] = [

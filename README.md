@@ -1,7 +1,7 @@
 <div align="center">
   <img src="public/logo.svg" height="120">
   <h1>AI Chat</h1>
-  <h3>AI Chatbots in the Menu Bar</h3>
+  <h3>Open AI Chat bots in the Menu Bar</h3>
 
   [![MacOS M1/M2 Chip](https://img.shields.io/badge/-MacOS_M_Chip%20%E2%86%92-black?style=flat-square&logo=apple&logoColor=white)](https://github.com/rabrain/ai-chat/releases)
   [![MacOS x64](https://img.shields.io/badge/-MacOS_x86%20%E2%86%92-black?style=flat-square&logo=apple&logoColor=white)](https://github.com/rabrain/ai-chat/releases)
@@ -17,8 +17,8 @@
 
 By having it reside on the menu bar, we eliminate the need to switch between windows when using ChatGPT as our daily assistant. It also enables us to have a streamlined workflow, as we can easily multitask and communicate with the AI without interrupting our current tasks.
 
-## All Chatbots in One Place
-Quick access to chatbots of your choice, including
+## Open AI Chat bots in One Place
+Quick access to AI chatbots of your choice, including
 - [OpenAI ChatGPT](https://chat.openai.com)
 - [Claude](https://claude.ai)  
 - [Google Gemini](https://gemini.google.com)

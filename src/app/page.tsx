@@ -35,7 +35,7 @@ export default function Home() {
                 New Features Is Now Available.
                 <ArrowRightCircle className="inline ml-1 w-4 h-4" />
               </p> */}
-              <Heading title="AI Chatbots in the Menu Bar" />
+              <Heading title="Open AI Chat bots in the Menu Bar" />
               <p className="max-w-[46rem] leading-normal md:text-xl sm:text-lg sm:leading-8">
                 AI Chat is a cross-platform ChatGPT desktop application that provides quick access to chatbots like OpenAI ChatGPT from the menu bar (tray).
               </p>

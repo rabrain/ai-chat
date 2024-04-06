@@ -8,7 +8,7 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AI Chat - ChatGPT in the menu Bar",
+  title: "AI Chat - Open ChatGPT in the Menu Bar",
   description: "Elevate your ChatGPT experience with AI Chat, the ultimate ChatGPT app. Access OpenAI ChatGPT instantly from your menu bar on Windows, Mac, or Linux.",
   keywords: [
     "chatgpt",
