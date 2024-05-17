@@ -17,6 +17,9 @@
 
 By having it reside on the menu bar, we eliminate the need to switch between windows when using ChatGPT as our daily assistant. It also enables us to have a streamlined workflow, as we can easily multitask and communicate with the AI without interrupting our current tasks.
 
+https://github.com/rabrain/ai-chat/assets/705652/16fae1a2-ba22-44e0-a2cc-d5beb88290bf
+
+
 ## Open AI Chat Bot in One Place
 Quick access to AI chatbot of your choice, including
 - [OpenAI ChatGPT](https://chat.openai.com)
