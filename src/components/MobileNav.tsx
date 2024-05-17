@@ -13,7 +13,7 @@ const MobileNav = () => {
   return (
     <>
       <div
-        className=" flex md:hidden cursor-pointer md:cursor-none"
+        className="flex md:hidden cursor-pointer md:cursor-none"
         onClick={toggleMenu}
       >
         {!isOpen ? <Menu /> : <X />}

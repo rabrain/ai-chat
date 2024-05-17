@@ -8,15 +8,15 @@ export const feature: Feature[] = [
   },
   {
     imageUrl: "/features/open.svg",
-    title: "Open AI Chat bots in One Place",
+    title: "Open AI Chat Bot in One Place",
     content:
-      "Quick access to AI chatbots of your choice, including ChatGPT, Claude, Gemini, Copilot, Perplexity etc.",
+      "Quick access to AI chatbot of your choice, including ChatGPT, Claude, Gemini, Copilot, Perplexity etc.",
   },
   {
     imageUrl: "/features/secure.svg",
     title: "100% secured",
     content:
-      "AI Chat bots are open in a secured webview. We never have access to your private data.",
+      "Open AI chat bot in a secured webview. We never have access to your private data.",
   },
 ];
 export const featuresBlock: featureBlock[] = [
