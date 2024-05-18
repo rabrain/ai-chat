@@ -17,5 +17,8 @@ module.exports = {
       transitionDuration: 300, // => 0.3s
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require('daisyui'),
+  ],
 };

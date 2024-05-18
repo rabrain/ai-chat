@@ -11,6 +11,7 @@ import Windows from "@/components/icons/Windows";
 import Linux from "@/components/icons/Linux";
 import Apple from "super-tiny-icons/images/svg/apple.svg";
 import IconLink from "@/components/IconLink";
+import FAQ from "@/components/FAQ";
 
 export default function Home() {
   const downloadUrl = "https://github.com/rabrain/ai-chat/releases/latest"
@@ -151,6 +152,10 @@ export default function Home() {
           </div>
         </section>
         {/* Contact section */}
+        <section>
+          <h1 className="text-center text-4xl font-bold mb-4">FAQ</h1>
+          <FAQ />
+        </section>
       </div>
     </main>
   );
