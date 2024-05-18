@@ -29,6 +29,9 @@ export default function FAQ() {
           By having it reside on the menu bar, we eliminate the need to switch between windows when using ChatGPT as our daily assistant. It also enables us to have a streamlined workflow, as we can easily multitask and communicate with the AI without interrupting our current tasks.
         </p>
       </QuestionAnswer>
+      <QuestionAnswer title="Is it free?">
+        Yes, AI Chat is a free ChatGPT desktop app.
+      </QuestionAnswer>
       <QuestionAnswer title="What chatbots (LLM models) can I use in AI Chat?">
         AI Chat enables you to quickly open AI chatbots of your choice, including:
         <ul className="list-disc ml-4">
@@ -50,7 +53,7 @@ export default function FAQ() {
         </ul>
       </QuestionAnswer>
       <QuestionAnswer title="Is AI Chat available in the Mac App Store?">
-        Yes, AI Chat is listed in the Mac App Store and available in most countries. But due to restrictions of Apple's app store, the version of AI Chat downloaded from the Mac App Store may lack some features of the version available from this official site.
+        Yes, AI Chat is listed in the <a href="https://apps.apple.com/app/ai-chat-open-bot/id6479942223" target="_blank">Mac App Store</a> and available in most countries. But due to restrictions of Apple's app store, the version of AI Chat downloaded from the Mac App Store may lack some features of the version available from this official site.
       </QuestionAnswer>
     </div>
   )
