@@ -53,7 +53,7 @@ export default function FAQ() {
         </ul>
       </QuestionAnswer>
       <QuestionAnswer title="Is AI Chat available in the Mac App Store?">
-        Yes, AI Chat is listed in the <a href="https://apps.apple.com/app/ai-chat-open-bot/id6479942223" target="_blank">Mac App Store</a> and available in most countries. But due to restrictions of Apple's app store, the version of AI Chat downloaded from the Mac App Store may lack some features of the version available from this official site.
+        Yes, AI Chat is listed in the <a href="https://apps.apple.com/app/ai-chat-open-bot/id6479942223" target="_blank">Mac App Store</a> and available in most countries. But due to restrictions of Apple&lsquo;s app store, the version of AI Chat downloaded from the Mac App Store may lack some features of the version available from this official site.
       </QuestionAnswer>
     </div>
   )
