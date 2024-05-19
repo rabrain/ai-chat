@@ -52,13 +52,19 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <Image
-              src="/screenshot-full.jpg"
-              width={960}
-              height={580}
-              alt="banner"
-              className="mx-auto shadow-xl"
-            />
+            <div className="carousel carousel-center w-full p-4 space-x-4 bg-neutral rounded-box">
+              <video className="carousel-item" controls>
+                <source src="/preview.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <Image
+                src="/screenshot-full.jpg"
+                width={960}
+                height={580}
+                alt="banner"
+                className="carousel-item mx-auto shadow-xl"
+              />
+            </div>
           </div>
         </section>
         {/* Home section */}
