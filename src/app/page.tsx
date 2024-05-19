@@ -27,8 +27,8 @@ export default function Home() {
         /> */}
         {/* Home section */}
         <section id="home" className="relative">
-          <figure className="bubble w-96 lg:w-[520px] h-96 bg-indigo-600 top-16 -left-40" />
-          <figure className="bubble w-96 lg:w-[430px] h-96 bg-sky-600 bottom-16 md:bottom-44 -right-20 md:right-20" />
+          <figure className="bubble w-80 lg:w-[520px] h-80 bg-indigo-600 top-16 -left-40" />
+          <figure className="bubble w-80 lg:w-[430px] h-80 bg-sky-600 bottom-16 md:bottom-44 -right-20 md:right-20" />
 
           <div className="flex flex-col text-center space-y-12">
             <div className="flex flex-col items-center space-y-6">
@@ -40,13 +40,13 @@ export default function Home() {
               <p className="max-w-[46rem] leading-normal md:text-xl sm:text-lg sm:leading-8">
                 AI Chat is a cross-platform ChatGPT desktop application that provides quick access to chatbots like OpenAI ChatGPT from the menu bar (tray).
               </p>
-              <div className="flex items-center gap-4">
-                <Link href={downloadUrl} className="btn btn-outline">
+              <div className="flex flex-wrap items-center justify-center gap-4">
+                <Link href={downloadUrl} className="btn btn-outline flex-shrink">
                   <Windows className="w-6 h-6" />
                   <span>Windows</span>
                 </Link>
                 <IconLink icon={Apple} text="Mac OS" href={downloadUrl} />
-                <Link href={downloadUrl} className="btn btn-outline">
+                <Link href={downloadUrl} className="btn btn-outline flex-shrink">
                   <Linux className="w-6 h-6" />
                   <span>Linux</span>
                 </Link>
