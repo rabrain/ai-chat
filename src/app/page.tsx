@@ -53,16 +53,26 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="carousel carousel-center w-full p-4 space-x-4 bg-neutral rounded-box">
-              <video className="carousel-item" controls>
-                <source src="/preview.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <Image
-                src={screenshot}
-                alt="banner"
-                className="carousel-item mx-auto shadow-xl"
-              />
+            <div>
+              <div className="carousel carousel-center w-full">
+                <div id="slide1" className="carousel-item w-full">
+                  <video controls>
+                    <source src="/preview.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <div id="slide2" className="carousel-item w-full">
+                  <Image
+                    src={screenshot}
+                    alt="banner"
+                    className="mx-auto shadow-xl rounded-box"
+                  />
+                </div>
+              </div>
+              <div className="flex justify-center w-full py-2 gap-2">
+                <a href="#slide1" className="btn btn-xs">1</a>
+                <a href="#slide2" className="btn btn-xs">2</a>
+              </div>
             </div>
           </div>
         </section>
