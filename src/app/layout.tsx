@@ -35,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="dark">
       <body
         className={`${inter.className} bg-slate-900 text-slate-300 text-lg min-h-screen overflow-x-hidden`}
       >
