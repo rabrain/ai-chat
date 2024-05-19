@@ -27,8 +27,8 @@ export default function Home() {
         /> */}
         {/* Home section */}
         <section id="home" className="relative">
-          <figure className="bubble w-80 lg:w-[520px] h-80 bg-indigo-600 top-16 -left-40" />
-          <figure className="bubble w-80 lg:w-[430px] h-80 bg-sky-600 bottom-16 md:bottom-44 -right-20 md:right-20" />
+          <figure className="bubble w-80 lg:w-[520px] h-80 bg-indigo-600 top-16" />
+          <figure className="bubble w-80 lg:w-[430px] h-80 bg-sky-600 bottom-16 md:bottom-44 md:right-20" />
 
           <div className="flex flex-col text-center space-y-12">
             <div className="flex flex-col items-center space-y-6">
