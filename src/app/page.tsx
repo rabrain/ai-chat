@@ -12,6 +12,7 @@ import Linux from "@/components/icons/Linux";
 import Apple from "super-tiny-icons/images/svg/apple.svg";
 import IconLink from "@/components/IconLink";
 import FAQ from "@/components/FAQ";
+import screenshot from 'public/screenshot-full.jpg';
 
 export default function Home() {
   const downloadUrl = "https://github.com/rabrain/ai-chat/releases/latest"
@@ -58,9 +59,7 @@ export default function Home() {
                 Your browser does not support the video tag.
               </video>
               <Image
-                src="/screenshot-full.jpg"
-                width={960}
-                height={580}
+                src={screenshot}
                 alt="banner"
                 className="carousel-item mx-auto shadow-xl"
               />
