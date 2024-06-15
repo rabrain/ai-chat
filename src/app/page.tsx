@@ -7,12 +7,9 @@ import { Clients } from "@/constants/client";
 import { feature, featuresBlock } from "@/constants/feature";
 import FeatureCard from "@/components/FeatureCard";
 import FeatureBlock from "@/components/FeatureBlock";
-import Windows from "@/components/icons/Windows";
-import Linux from "@/components/icons/Linux";
-import Apple from "super-tiny-icons/images/svg/apple.svg";
-import IconLink from "@/components/IconLink";
 import FAQ from "@/components/FAQ";
 import screenshot from 'public/screenshot-full.jpg';
+import Download from "@/components/Download";
 
 export default function Home() {
   const downloadUrl = "https://github.com/rabrain/ai-chat/releases/latest"
@@ -41,17 +38,7 @@ export default function Home() {
               <p className="max-w-[46rem] leading-normal md:text-xl sm:text-lg sm:leading-8">
                 AI Chat is a cross-platform ChatGPT desktop application that provides quick access to chatbots like OpenAI ChatGPT from the menu bar (tray).
               </p>
-              <div className="flex flex-wrap items-center justify-center gap-4">
-                <Link href={downloadUrl} className="btn btn-outline flex-shrink">
-                  <Windows className="w-6 h-6" />
-                  <span>Windows</span>
-                </Link>
-                <IconLink icon={Apple} text="Mac OS" href={downloadUrl} />
-                <Link href={downloadUrl} className="btn btn-outline flex-shrink">
-                  <Linux className="w-6 h-6" />
-                  <span>Linux</span>
-                </Link>
-              </div>
+              <Download repo="rabrain/ai-chat" />
             </div>
             <div>
               <div className="carousel carousel-center w-full">

@@ -1,3 +1,4 @@
+import {nextui} from '@nextui-org/theme';
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -5,6 +6,7 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/stories/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   // Toggle dark-mode based on .dark class or data-mode="dark"
   darkMode: ['class', '[data-mode="dark"]'],
@@ -19,6 +21,7 @@ module.exports = {
   },
   plugins: [
     require("tailwindcss-animate"),
-    require('daisyui'),
+    // require('daisyui'),
+    nextui(),
   ],
 };
