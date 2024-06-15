@@ -14,7 +14,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext
 export default function Home() {
   return (
     <main className="pt-24 lg:pt-28 antialiased">
-      <div className="relative container lg:w-4/5">
+      <div className="relative container lg:w-4/5 space-y-12 md:space-y-16 lg:space-y-20">
         {/* <Image
           src="/bg.png"
           width={1920}
