@@ -9,6 +9,7 @@ import FAQ from "@/components/FAQ";
 import screenshot from 'public/screenshot-full.jpg';
 import DropdownDownload from "@/components/DropdownDownload";
 import DownloadLink from "@/components/Download";
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 
 export default function Home() {
   return (
@@ -38,27 +39,24 @@ export default function Home() {
               </p>
               <DropdownDownload />
             </div>
-            <div>
-              <div className="carousel carousel-center w-full">
-                <div id="slide1" className="carousel-item w-full">
+            <Carousel opts={{ loop: true }} className="mx-12">
+              <CarouselContent>
+                <CarouselItem>
                   <video controls>
                     <source src="/preview.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
-                </div>
-                <div id="slide2" className="carousel-item w-full">
+                </CarouselItem>
+                <CarouselItem>
                   <Image
                     src={screenshot}
                     alt="banner"
-                    className="mx-auto shadow-xl rounded-box"
                   />
-                </div>
-              </div>
-              <div className="flex justify-center w-full py-2 gap-2">
-                <a href="#slide1" className="btn btn-xs">1</a>
-                <a href="#slide2" className="btn btn-xs">2</a>
-              </div>
-            </div>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </div>
         </section>
         {/* Home section */}
