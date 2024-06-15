@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { GoogleAnalytics } from '@next/third-parties/google'
+import { NextUIProvider } from "@nextui-org/system";
+import { ReleaseProvider } from "@/lib/release-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,9 +41,13 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-slate-900 text-slate-300 text-lg min-h-screen overflow-x-hidden`}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <NextUIProvider>
+          <Navbar />
+          <ReleaseProvider repo="rabrain/ai-chat">
+            {children}
+          </ReleaseProvider>
+          <Footer />
+        </NextUIProvider>
       </body>
       <GoogleAnalytics gaId="G-XHXGY43X34" />
     </html>

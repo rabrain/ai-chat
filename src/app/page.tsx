@@ -1,24 +1,20 @@
 import { MoveRight } from "lucide-react";
 import Heading from "@/components/Heading";
-import Button from "@/components/Button";
-import Link from "next/link";
 import Image from "next/image";
 import { Clients } from "@/constants/client";
 import { feature, featuresBlock } from "@/constants/feature";
 import FeatureCard from "@/components/FeatureCard";
 import FeatureBlock from "@/components/FeatureBlock";
-import Windows from "@/components/icons/Windows";
-import Linux from "@/components/icons/Linux";
-import Apple from "super-tiny-icons/images/svg/apple.svg";
-import IconLink from "@/components/IconLink";
 import FAQ from "@/components/FAQ";
 import screenshot from 'public/screenshot-full.jpg';
+import DropdownDownload from "@/components/DropdownDownload";
+import DownloadLink from "@/components/Download";
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 
 export default function Home() {
-  const downloadUrl = "https://github.com/rabrain/ai-chat/releases/latest"
   return (
     <main className="pt-24 lg:pt-28 antialiased">
-      <div className="relative container lg:w-4/5">
+      <div className="relative container lg:w-4/5 space-y-12 md:space-y-16 lg:space-y-20">
         {/* <Image
           src="/bg.png"
           width={1920}
@@ -41,39 +37,26 @@ export default function Home() {
               <p className="max-w-[46rem] leading-normal md:text-xl sm:text-lg sm:leading-8">
                 AI Chat is a cross-platform ChatGPT desktop application that provides quick access to chatbots like OpenAI ChatGPT from the menu bar (tray).
               </p>
-              <div className="flex flex-wrap items-center justify-center gap-4">
-                <Link href={downloadUrl} className="btn btn-outline flex-shrink">
-                  <Windows className="w-6 h-6" />
-                  <span>Windows</span>
-                </Link>
-                <IconLink icon={Apple} text="Mac OS" href={downloadUrl} />
-                <Link href={downloadUrl} className="btn btn-outline flex-shrink">
-                  <Linux className="w-6 h-6" />
-                  <span>Linux</span>
-                </Link>
-              </div>
+              <DropdownDownload />
             </div>
-            <div>
-              <div className="carousel carousel-center w-full">
-                <div id="slide1" className="carousel-item w-full">
+            <Carousel opts={{ loop: true }} className="mx-12">
+              <CarouselContent>
+                <CarouselItem>
                   <video controls>
                     <source src="/preview.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
-                </div>
-                <div id="slide2" className="carousel-item w-full">
+                </CarouselItem>
+                <CarouselItem>
                   <Image
                     src={screenshot}
                     alt="banner"
-                    className="mx-auto shadow-xl rounded-box"
                   />
-                </div>
-              </div>
-              <div className="flex justify-center w-full py-2 gap-2">
-                <a href="#slide1" className="btn btn-xs">1</a>
-                <a href="#slide2" className="btn btn-xs">2</a>
-              </div>
-            </div>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </div>
         </section>
         {/* Home section */}
@@ -114,9 +97,9 @@ export default function Home() {
               <p className="lg:max-w-[34rem] leading-normal sm:text-lg sm:leading-8">
                 AI Chat eliminates the need to switch between windows when using ChatGPT as our daily assistant.
               </p>
-              <Link href={downloadUrl}>
-                <Button>Get Started</Button>
-              </Link>
+              <DownloadLink color="primary" size="lg">
+                Get Started
+              </DownloadLink>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-1 gap-4 ">
               {feature.map((feature, index) => (
@@ -160,10 +143,16 @@ export default function Home() {
                 Get started today!
               </p>
             </div>
-            <Link href={downloadUrl} className="btn btn-primary">
+            <DownloadLink
+              color="secondary"
+              size="lg"
+              showAnchorIcon
+              anchorIcon={
+                <MoveRight className="w-4 h-4" />
+              }
+            >
               Download
-              <MoveRight className="w-4 h-4" />
-            </Link>
+            </DownloadLink>
           </div>
         </section>
         {/* Contact section */}
