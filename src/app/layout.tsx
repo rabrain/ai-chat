@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { NextUIProvider } from "@nextui-org/system";
+import { ReleaseProvider } from "@/lib/release-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,7 +43,9 @@ export default function RootLayout({
       >
         <NextUIProvider>
           <Navbar />
-          {children}
+          <ReleaseProvider repo="rabrain/ai-chat">
+            {children}
+          </ReleaseProvider>
           <Footer />
         </NextUIProvider>
       </body>

@@ -1,7 +1,5 @@
 import { MoveRight } from "lucide-react";
 import Heading from "@/components/Heading";
-import Button from "@/components/Button";
-import Link from "next/link";
 import Image from "next/image";
 import { Clients } from "@/constants/client";
 import { feature, featuresBlock } from "@/constants/feature";
@@ -9,7 +7,9 @@ import FeatureCard from "@/components/FeatureCard";
 import FeatureBlock from "@/components/FeatureBlock";
 import FAQ from "@/components/FAQ";
 import screenshot from 'public/screenshot-full.jpg';
-import Download from "@/components/Download";
+import DropdownDownload from "@/components/DropdownDownload";
+import { Button } from "@nextui-org/button";
+import { Link } from "@nextui-org/link";
 
 export default function Home() {
   const downloadUrl = "https://github.com/rabrain/ai-chat/releases/latest"
@@ -38,7 +38,7 @@ export default function Home() {
               <p className="max-w-[46rem] leading-normal md:text-xl sm:text-lg sm:leading-8">
                 AI Chat is a cross-platform ChatGPT desktop application that provides quick access to chatbots like OpenAI ChatGPT from the menu bar (tray).
               </p>
-              <Download repo="rabrain/ai-chat" />
+              <DropdownDownload />
             </div>
             <div>
               <div className="carousel carousel-center w-full">
@@ -101,9 +101,7 @@ export default function Home() {
               <p className="lg:max-w-[34rem] leading-normal sm:text-lg sm:leading-8">
                 AI Chat eliminates the need to switch between windows when using ChatGPT as our daily assistant.
               </p>
-              <Link href={downloadUrl}>
-                <Button>Get Started</Button>
-              </Link>
+              <Button as={Link} href={downloadUrl}>Get Started</Button>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-1 gap-4 ">
               {feature.map((feature, index) => (

@@ -1,25 +1,10 @@
-'use client';
+'use client'
 
-// Ref: https://github.com/janhq/docs/blob/main/src/components/DropdownDownload/index.tsx#L114
-import { ReactNode, useEffect, useState } from 'react'
-import { Button, ButtonGroup } from "@nextui-org/button";
-import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem } from "@nextui-org/dropdown";
-
-// import { FaWindows, FaApple, FaLinux } from 'react-icons/fa'
-// import { IconType } from 'react-icons/lib'
-import { ChevronDownIcon } from './icons/ChevronDownIcon';
-import { Link } from '@nextui-org/link';
-import MacOS from './icons/MacOS';
-import Windows from './icons/Windows';
-import Linux from './icons/Linux';
-import { SVGComponent } from './icons/types';
-
-type Props = {
-  /**
-    Github Repository, e.g. rabrain/ai-chat
-   */
-  repo: string
-}
+import Linux from '@/components/icons/Linux';
+import MacOS from '@/components/icons/MacOS';
+import Windows from '@/components/icons/Windows';
+import { SVGComponent } from '@/components/icons/types';
+import React, { createContext, useState, useEffect, useContext, ReactNode } from 'react';
 
 type SystemType = {
   name: string
@@ -27,6 +12,18 @@ type SystemType = {
   fileFormat: string
   href?: string
 }
+
+type ReleaseAsset = {
+  systems: SystemType[]
+  current?: SystemType,
+  url?: string,
+}
+
+const initialReleaseAsset: ReleaseAsset = {
+  systems: [],
+}
+
+const ReleaseContext = createContext<ReleaseAsset>(initialReleaseAsset)
 
 const systemsTemplate: SystemType[] = [
   {
@@ -49,11 +46,6 @@ const systemsTemplate: SystemType[] = [
     logo: Linux,
     fileFormat: '{appname}-{tag}-linux-x86_64.AppImage',
   },
-  /* {
-    name: 'Download for Linux (deb)',
-    logo: FaLinux,
-    fileFormat: '{appname}-{tag}-linux-amd64.deb',
-  }, */
 ]
 
 const extractAppName = (fileName: string) => {
@@ -62,7 +54,15 @@ const extractAppName = (fileName: string) => {
   return match ? match[1] : null
 }
 
-const DropdownDownload = ({ repo }: Props) => {
+type Props = {
+  /**
+    Github Repository, e.g. rabrain/ai-chat
+   */
+  repo: string
+  children: ReactNode
+}
+
+export const ReleaseProvider = ({ repo, children }: Props) => {
   const [systems, setSystems] = useState(systemsTemplate)
   const [defaultSystem, setDefaultSystem] = useState(systems[0])
 
@@ -121,49 +121,16 @@ const DropdownDownload = ({ repo }: Props) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
+  const context = {
+    systems,
+    current: defaultSystem,
+    url: `https://github.com/${repo}/releases/latest`
+  }
   return (
-    <ButtonGroup variant="flat">
-      <Button
-        href={defaultSystem.href}
-        as={Link}
-        color="primary"
-        variant="solid"
-        size='lg'
-        startContent={
-          <defaultSystem.logo className='w-6' />
-        }
-      // showAnchorIcon
-      >
-        {defaultSystem.name}
-      </Button>
-      <Dropdown placement="bottom-end">
-        <DropdownTrigger>
-          <Button isIconOnly color='primary' variant='solid' size='lg' aria-label="Download options">
-            <ChevronDownIcon />
-          </Button>
-        </DropdownTrigger>
-        <DropdownMenu
-          // disallowEmptySelection
-          aria-label="Download options"
-          // selectionMode="single"
-          color="primary"
-          variant="solid"
-        >
-          {systems.map((system) => (
-            <DropdownItem
-              key={system.name}
-              startContent={<system.logo className="w-6" />}
-              textValue={system.name}
-            >
-              <Link color='foreground' href={system.href || ''}>
-                {system.name}
-              </Link>
-            </DropdownItem>
-          ))}
-        </DropdownMenu>
-      </Dropdown>
-    </ButtonGroup>
-  )
-}
+    <ReleaseContext.Provider value={context}>
+      {children}
+    </ReleaseContext.Provider>
+  );
+};
 
-export default DropdownDownload
+export const useRelease = () => useContext(ReleaseContext);
