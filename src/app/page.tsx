@@ -8,11 +8,9 @@ import FeatureBlock from "@/components/FeatureBlock";
 import FAQ from "@/components/FAQ";
 import screenshot from 'public/screenshot-full.jpg';
 import DropdownDownload from "@/components/DropdownDownload";
-import { Button } from "@nextui-org/button";
-import { Link } from "@nextui-org/link";
+import DownloadLink from "@/components/Download";
 
 export default function Home() {
-  const downloadUrl = "https://github.com/rabrain/ai-chat/releases/latest"
   return (
     <main className="pt-24 lg:pt-28 antialiased">
       <div className="relative container lg:w-4/5">
@@ -101,7 +99,9 @@ export default function Home() {
               <p className="lg:max-w-[34rem] leading-normal sm:text-lg sm:leading-8">
                 AI Chat eliminates the need to switch between windows when using ChatGPT as our daily assistant.
               </p>
-              <Button as={Link} href={downloadUrl}>Get Started</Button>
+              <DownloadLink color="primary" size="lg">
+                Get Started
+              </DownloadLink>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-1 gap-4 ">
               {feature.map((feature, index) => (
@@ -145,10 +145,16 @@ export default function Home() {
                 Get started today!
               </p>
             </div>
-            <Link href={downloadUrl} className="btn btn-primary">
+            <DownloadLink
+              color="secondary"
+              size="lg"
+              showAnchorIcon
+              anchorIcon={
+                <MoveRight className="w-4 h-4" />
+              }
+            >
               Download
-              <MoveRight className="w-4 h-4" />
-            </Link>
+            </DownloadLink>
           </div>
         </section>
         {/* Contact section */}
