@@ -1,4 +1,4 @@
 export const navLinks: Record<string, string> = {
-  features: "#features",
+  "App Store": "https://apps.apple.com/us/app/ai-chat-open-bot/id6479942223?mt=12",
   extension: "https://chromewebstore.google.com/detail/ai-chat/edlcpchefdlohaedkcgffdakmflpfpnd"
 };

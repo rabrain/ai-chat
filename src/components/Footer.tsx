@@ -32,11 +32,11 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <div className="basis-1/2 grid grid-cols-2 pt-8 lg:pt-0 lg:ps-8">
+        <div className="basis-1/2 grid grid-cols-1 pt-8 lg:pt-0 lg:ps-8">
           {footerColumns.map((col, index) => (
             <article
               key={index}
-              className="capitalize flex flex-col md:text-center lg:text-start"
+              className="capitalize flex flex-col text-center lg:text-end"
             >
               <h2 className="font-bold lg:text-lg text-slate-100 mb-6">
                 {col.title}
@@ -47,7 +47,7 @@ const Footer = () => {
                     key={index}
                     className="font-normal pb-3 hover:text-sky-600 hover:ps-1 transition-all cursor-pointer"
                   >
-                    {link}
+                    <a href={link.href} target="_blank">{link.label}</a>
                   </li>
                 ))}
               </ul>

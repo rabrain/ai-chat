@@ -25,7 +25,12 @@ export interface Testimonial {
   role: string;
   review: string;
 }
+type Link = {
+  label: string;
+  href: string;
+};
+
 export interface FooterColumn {
   title: string;
-  links: string[];
+  links: Link[];
 }
