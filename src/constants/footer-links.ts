@@ -21,13 +21,13 @@ export const footerColumns: FooterColumn[] = [
     title: "More",
     links: [
       {
-        label: "Rabrain",
-        href: "https://www.rabrain.com"
+        label: "Second Brain AI",
+        href: "https://www.rabrain.com",
       },
       {
-        label: "SEO",
-        href: "https://chatgpt.com/share/510dc6b5-bef1-4bc1-a9e6-6343d429edb7"
+        label: "Download on App Store",
+        href: "https://apps.apple.com/us/app/ai-chat-open-bot/id6479942223?mt=12",
       },
-    ]
-  }
+    ],
+  },
 ];
