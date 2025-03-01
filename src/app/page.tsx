@@ -34,8 +34,11 @@ export default function Home() {
                 <ArrowRightCircle className="inline ml-1 w-4 h-4" />
               </p> */}
               <Heading title="Open AI Chat Bot in the Menu Bar" />
-              <p className="max-w-[46rem] leading-normal md:text-xl sm:text-lg sm:leading-8">
+              <p className="max-w-[46rem] leading-normal text-primary-foreground md:text-xl sm:text-lg sm:leading-8">
                 AI Chat is a cross-platform ChatGPT desktop application that provides quick access to chatbots like OpenAI ChatGPT from the menu bar (tray).
+              </p>
+              <p className="max-w-[46rem]">
+                Works perfectly alongside our <a href="https://www.rabrain.com" className="text-sky-400">Bookmark AI & Second Brain App</a> for a complete AI productivity suite.
               </p>
               <DropdownDownload />
             </div>

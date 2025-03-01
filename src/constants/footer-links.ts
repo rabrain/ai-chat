@@ -21,7 +21,7 @@ export const footerColumns: FooterColumn[] = [
     title: "More",
     links: [
       {
-        label: "Second Brain AI",
+        label: "AI Second Brain",
         href: "https://www.rabrain.com",
       },
       {
